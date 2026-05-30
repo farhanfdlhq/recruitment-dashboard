@@ -3,10 +3,10 @@
 Berikut adalah hasil pengerjaan Technical Test untuk posisi Fullstack Developer Junior di Inovtek Cipta Digital.
 
 ## 1. Link GitHub Repository
-[https://github.com/USERNAME_ANDA/recruitment-dashboard](https://github.com/USERNAME_ANDA/recruitment-dashboard) *(Silakan ganti URL ini dengan URL repository Anda)*
+[https://github.com/farhanfdlhq/recruitment-dashboard](https://github.com/farhanfdlhq/recruitment-dashboard)
 
 ## 2. Link Live Demo (Vercel)
-[https://recruitment-dashboard-inovtek.vercel.app](https://recruitment-dashboard-inovtek.vercel.app) *(Silakan ganti URL ini dengan URL live demo Vercel Anda)*
+[https://recruitment-dashboard-test.vercel.app](https://recruitment-dashboard-test.vercel.app)
 
 ---
 
