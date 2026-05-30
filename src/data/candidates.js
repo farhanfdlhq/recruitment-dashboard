@@ -1,0 +1,17 @@
+export const CANDIDATES = [
+  { id: 1, name: 'Andi Pratama', position: 'Frontend Developer', stage: 'applied', date: '2026-05-20', avatar: 'AP' },
+  { id: 2, name: 'Sari Dewi', position: 'UI/UX Designer', stage: 'interview', date: '2026-05-18', avatar: 'SD' },
+  { id: 3, name: 'Budi Santoso', position: 'Backend Developer', stage: 'hired', date: '2026-05-10', avatar: 'BS' },
+  { id: 4, name: 'Rina Marlina', position: 'Data Analyst', stage: 'applied', date: '2026-05-22', avatar: 'RM' },
+  { id: 5, name: 'Doni Kusuma', position: 'DevOps Engineer', stage: 'interview', date: '2026-05-17', avatar: 'DK' },
+  { id: 6, name: 'Fitri Aulia', position: 'Mobile Developer', stage: 'applied', date: '2026-05-23', avatar: 'FA' },
+  { id: 7, name: 'Hendra Wijaya', position: 'Fullstack Developer', stage: 'hired', date: '2026-05-08', avatar: 'HW' },
+  { id: 8, name: 'Maya Sari', position: 'QA Engineer', stage: 'interview', date: '2026-05-19', avatar: 'MS' },
+  { id: 9, name: 'Rizky Fauzan', position: 'Frontend Developer', stage: 'applied', date: '2026-05-24', avatar: 'RF' },
+  { id: 10, name: 'Laras Ningrum', position: 'Product Manager', stage: 'applied', date: '2026-05-25', avatar: 'LN' },
+  { id: 11, name: 'Agus Setiawan', position: 'Backend Developer', stage: 'hired', date: '2026-05-06', avatar: 'AS' },
+  { id: 12, name: 'Nita Rahayu', position: 'UI/UX Designer', stage: 'interview', date: '2026-05-16', avatar: 'NR' },
+  { id: 13, name: 'Bagas Adi', position: 'DevOps Engineer', stage: 'applied', date: '2026-05-26', avatar: 'BA' },
+  { id: 14, name: 'Citra Lestari', position: 'Mobile Developer', stage: 'interview', date: '2026-05-15', avatar: 'CL' },
+  { id: 15, name: 'Yoga Pratama', position: 'Fullstack Developer', stage: 'applied', date: '2026-05-27', avatar: 'YP' },
+];

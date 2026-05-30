@@ -1,0 +1,59 @@
+.stat-card {
+  background: var(--color-canvas);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-hairline);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  background: rgba(0, 102, 204, 0.08);
+}
+
+/* Accent variants */
+.stat-card--green .stat-card-icon {
+  color: #1a7f3c;
+  background: rgba(26, 127, 60, 0.08);
+}
+
+.stat-card--amber .stat-card-icon {
+  color: #a05c00;
+  background: rgba(160, 92, 0, 0.08);
+}
+
+.stat-card-value {
+  font-size: 30px;
+  font-weight: var(--fw-semibold);
+  color: var(--color-ink);
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.stat-card-label {
+  font-size: 13px;
+  color: var(--color-ink-muted);
+  margin-top: 2px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 640px) {
+  .stat-card-value {
+    font-size: 24px;
+  }
+}

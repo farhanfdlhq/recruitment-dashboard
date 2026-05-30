@@ -1,0 +1,219 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-tile-dark);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background blobs — subtle ambient glow */
+.login-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.login-bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.12;
+}
+
+.login-bg-blob--1 {
+  width: 500px;
+  height: 500px;
+  background: var(--color-primary);
+  top: -120px;
+  left: -100px;
+}
+
+.login-bg-blob--2 {
+  width: 400px;
+  height: 400px;
+  background: #2997ff;
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 40px 36px;
+  backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 1;
+  animation: loginSlideUp 0.35s ease;
+}
+
+@keyframes loginSlideUp {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Brand */
+.login-brand {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: var(--fw-semibold);
+  color: #fff;
+  letter-spacing: -0.4px;
+  margin-bottom: 4px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0;
+}
+
+/* Error */
+.login-error {
+  background: rgba(255, 80, 80, 0.12);
+  border: 1px solid rgba(255, 80, 80, 0.25);
+  color: #ff9090;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Form overrides for dark card */
+.login-form .form-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-form .input-field {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+/* Fix browser autofill making input white */
+.login-form .input-field:-webkit-autofill,
+.login-form .input-field:-webkit-autofill:hover, 
+.login-form .input-field:-webkit-autofill:focus, 
+.login-form .input-field:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px #2c2c2e inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.login-form .input-field::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.login-form .input-field:focus {
+  border-color: var(--color-primary-on-dark);
+  box-shadow: 0 0 0 3px rgba(41, 151, 255, 0.18);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* Password toggle */
+.login-pass-wrap {
+  position: relative;
+}
+
+.login-pass-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+  z-index: 10;
+}
+
+.login-pass-toggle:hover {
+  color: #fff;
+}
+
+/* Submit */
+.login-submit {
+  width: 100%;
+  margin-top: 8px;
+  padding: 13px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.login-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-submit:disabled:active {
+  transform: none;
+}
+
+.login-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: loginSpin 0.6s linear infinite;
+}
+
+@keyframes loginSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hint */
+.login-hint {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.28);
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+.login-hint strong {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 440px) {
+  .login-card {
+    padding: 28px 20px;
+  }
+}
